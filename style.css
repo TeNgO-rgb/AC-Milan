@@ -1,202 +1,213 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+:root {
+    --accent: #0ea5a4;
+   
+    --bg: #f8faf9;
+    --text: #0f172a;
+    --muted: #6b7280;
+    --max-width: 1100px;
 }
 
-/* Header */
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    margin: 0;
+    color: var(--text);
+    background: var(--bg);
+}
+
 header {
+    background :  rgb(135, 218, 222);
+    border-bottom: 1px solid rgba(14, 165, 164, 0.08);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 18px 20px;
+}
+
+.topbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    position: relative;
+    justify-content: space-between;
+    gap: 16px
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 20px;
-    color: black;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text)
+}
+
+.logo svg {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px
+}
+
+.brand {
+    font-weight: 700;
+    letter-spacing: 0.2px
 }
 
 nav ul {
+    display: flex;
+    gap: 14px;
     list-style: none;
-    display: flex;
-    gap: 25px;
+    margin: 0;
+    padding: 0
 }
 
-nav ul li a {
+nav a {
+    display: inline-block;
+    padding: 8px 10px;
+    color: blue;
     text-decoration: none;
-    color: black;
-    font-size: 15px;
-    transition: 0.3s;
+    border-radius: 8px
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-    color: black;
+nav a:hover {
+    color: var(--text);
+    background: rgba(14, 165, 164, 0.06)
 }
 
-.call-btn {
-    background: blueviolet;
-    padding: 10px 20px;
-    border-radius: 25px;
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
+
+main {
+    padding: 36px 0 80px
 }
 
-.call-btn:hover {
-    background: rgb(43, 73, 226);
-}
-
-/* Hero Section */
 .hero {
-    height: 90vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 28px;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 60px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+
+.photo-stack {
     position: relative;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 360px
 }
 
-.hero-text {
-    z-index: 2;
-    max-width: 500px;
+.photo-stack img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08)
 }
 
-.hero-text h1 {
-    font-size: 52px;
-    font-weight: 800;
-    color: black;
-    line-height: 1.2;
-    margin-bottom: 20px;
+/* Large photo slightly higher */
+.photo-large {
+    position: relative;
+    transform: translateY(-18px);
 }
 
-.hero-text p {
-    color: grey;
-    margin-bottom: 30px;
-}
-
-.learn-btn {
-    background: blueviolet;
-    color: whitesmoke;
-    padding: 12px 28px;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.learn-btn:hover {
-    background: blueviolet;
-}
-
-
-
-/* Burger Menu (hidden on desktop) */
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background: black;
-    border-radius: 3px;
-}
-
-
-
-
-
-
-
-
-/* Hero Background */
-.hero-bg {
+/* a little higher */
+/* Medium photo slightly lower and overlapping */
+.photo-medium {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(180deg, rgb(43, 73, 226), rgb(43, 73, 226));
-    clip-path: polygon(0 60%, 20% 70%, 40% 55%, 60% 75%, 80% 60%, 100% 80%, 100% 100%, 0% 100%);
-    z-index: 1;
+    right: -500px;
+    bottom: 17px;
+    width: 60%;
+    max-width: 400px;
+    transform: translateY(0);
+    box-shadow: 0 20px 40px rgba(2, 6, 23, 0.12)
+}
+
+/* Right column content */
+.content-card {
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.04)
+}
+
+main {
+    background-image: url("https: //media.istockphoto.com/id/1176927481/photo/stadium.jpg?s=612x612&w=0&k=20&c=1U9InnU3Nmj-W8fGiO4L7yXHNFkefXOBiwgludxmzPY=");
+    
+    background-size: cover;
+    
+    background-position: center;
+    
+    background-repeat: no-repeat;
+    
+    min-height: 100vh;
+    
+    padding: 40px;
 }
 
 
 
-/* Burger Menu */
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 6px;
-    z-index: 1000;
+.content-card h1 {
+    margin: 0 0 10px;
+    font-size: 22px
 }
 
-.burger div {
-    width: 28px;
-    height: 3px;
-    background: #111;
-    border-radius: 3px;
-    transition: all 0.4s ease;
+.content-card p {
+    margin: 0 0 14px;
+    color: var(--muted);
+    line-height: 1.5
 }
 
-/* ბურგერის გახსნისას */
-.burger.toggle div:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 6px);
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 600
 }
 
-.burger.toggle div:nth-child(2) {
-    opacity: 0;
-}
-
-.burger.toggle div:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+footer {
+    padding: 20px 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    nav ul {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 0;
-        align-items: center;
-        display: none;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    .burger {
-        display: flex;
-    }
-
-    .call-btn {
-        display: none;
-    }
-
+@media (max-width:980px) {
     .hero {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
+        grid-template-columns: 1fr;
+        padding: 0 20px
     }
 
-    .hero-text h1 {
-        font-size: 36px;
+    .photo-medium {
+        position: relative;
+        right: 10px;
+        bottom: -22px;
+        width: 50%;
+        max-width: 260px
     }
+}
+
+@media (max-width:560px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    nav ul {
+        flex-wrap: wrap
+    }
+
+    .photo-stack {
+        min-height: 260px
+    }
+
+    .photo-medium {
+        display: none
+    }
+
+    /* hide medium on very small screens for clarity */
 }

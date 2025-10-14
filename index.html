@@ -1,47 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html lang="ka">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+
+  
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <div class="logo">Bizbud</div>
-    <nav>
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Clients</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <a href="#" class="call-btn">call</a>
-    
+    <div class="container topbar">
+      <a class="logo" href="#">
+        <!-- simple SVG logo -->
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="48" height="48" rx="10" fill="var(--accent)"/>
+          <path d="M14 30 L24 16 L34 30" stroke="white" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <div class="brand">ჩემი საიტი</div>
+          <div style="font-size:12px; color:var(--muted)"></div>
+        </div>
+      </a>
 
-<div class="burger">
-      <div> |</div>
-      <div>|</div>
-      <div>|</div>
+      <nav aria-label="კრძაი">
+        <ul>
+          <li><a href="#">Main</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </nav>
     </div>
-
-
-
-
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>the power<br>of Good Advice</h1>
-      <p> Click here to add your own text</p>
-      <a href="#" class="learn-btn">click here</a>
-    </div>
-    <div class="hero-bg"></div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="photo-stack">
+        <!-- Replace the src attributes with your image filenames (large.jpg and medium.jpg) placed next to index.html -->
+        <img class="photo-large" src="https://extratimetalk.com/wp-content/uploads/2025/06/imago1062847356-scaled.jpg" alt="დიდი ფოტო" />
+        <img class="photo-medium" src="https://fifpro.org/media/fhmfhvkx/messi-world-cup.jpg?rxy=0.48356841796117644,0.31512414378031967&width=1600&height=1024&rnd=133210253587130000" alt="საშუალო ფოტო" />
+      </div>
+
+      
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> ყველა უფლება დაცულია
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
