@@ -1,58 +1,86 @@
-
 <!doctype html>
 <html lang="ka">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container topbar">
-      <a class="logo" href="#">
-        <!-- simple SVG logo -->
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="48" height="48" rx="10" fill="var(--accent)"/>
-          <path d="M14 30 L24 16 L34 30" stroke="white" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div>
-          <div class="brand">ჩემი საიტი</div>
-          <div style="font-size:12px; color:var(--muted)"></div>
-        </div>
-      </a>
 
-      <nav aria-label="კრძაი">
-        <ul>
-          <li><a href="#">Main</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">contact us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="photo-stack">
-        <!-- Replace the src attributes with your image filenames (large.jpg and medium.jpg) placed next to index.html -->
-        <img class="photo-large" src="https://extratimetalk.com/wp-content/uploads/2025/06/imago1062847356-scaled.jpg" alt="დიდი ფოტო" />
-        <img class="photo-medium" src="https://fifpro.org/media/fhmfhvkx/messi-world-cup.jpg?rxy=0.48356841796117644,0.31512414378031967&width=1600&height=1024&rnd=133210253587130000" alt="საშუალო ფოტო" />
-      </div>
+<header class="site-header">
+<div class="header-inner">
+<div class="logo">
+<div class="clapper"🎞️></div>
+<div class="title"></div>
+</div>
+</div>
+</header>
 
-      
-    </section>
-  </main>
 
-  <footer>
-    © <span id="year"></span> ყველა უფლება დაცულია
-  </footer>
+<main class="container">
+<section class="row">
+<h2 class="section-title">Recommended</h2>
+<div class="grid">
+<article class="card">
+<img src="https://m.media-amazon.com/images/M/MV5BYWQwMGRhNGEtZTNhMy00MzVjLWJhMjItYjcwMDljMTkyNTg2XkEyXkFqcGc@._V1_.jpg" alt="The Walking Dead poster" class="poster">
+<div class="caption">The Walking Dead</div>
+</article>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
+<article class="card">
+<img src="https://www.fsunews.com/gcdn/presto/2023/01/15/PFSU/2821e7df-1732-4157-9904-72938c88bba0-alice_in_borderland.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp" alt="Alice in Borderland poster" class="poster">
+<div class="caption">Alice in Borderland</div>
+</article>
+
+
+<article class="card">
+<img src="https://m.media-amazon.com/images/I/91+qwO5qnwL._UF1000,1000_QL80_.jpg" alt="The 100 poster" class="poster">
+<div class="caption">The 100</div>
+</article>
+
+
+<article class="card">
+<img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p185267_b_v8_ac.jpg" alt="Dexter poster" class="poster">
+<div class="caption">Dexter</div>
+</article>
+</div>
+</section>
+
+
+<section class="row">
+<h2 class="section-title">New</h2>
+<div class="grid">
+<article class="card">
+<img src="https://m.media-amazon.com/images/M/MV5BZWM0OWVmNTEtNWVkOS00MzgyLTkyMzgtMmE2ZTZiNjY4MmFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Spider-Man poster" class="poster">
+<div class="caption">Spider-Man</div>
+</article>
+
+
+<article class="card">
+<img src="https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_.jpg" alt="Ant-Man poster" class="poster">
+<div class="caption">Ant-Man</div>
+</article>
+
+
+<article class="card">
+<img src="https://m.media-amazon.com/images/M/MV5BNjRhNGZjZjEtYTQzYS00OWUxLThjNGEtMTIwMTE2ZDFlZTZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Thor poster" class="poster">
+<div class="caption">Thor</div>
+</article>
+
+
+<article class="card">
+<img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg" alt="Iron Man poster" class="poster">
+<div class="caption">Iron Man</div>
+</article>
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<!-- Empty footer to match simple layout in screenshot -->
+</footer>
 </body>
 </html>
