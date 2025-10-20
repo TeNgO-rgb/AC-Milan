@@ -1,86 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ka">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Document</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>CarRent.ge</title>
+  <link rel="stylesheet" href="style.css">
+ <script src="js/script.js"></script>
 </head>
 <body>
+  <header>
+    <div class="logo">CarRent.ge</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">მთავარი</a></li>
+        <li><a href="cars.html">მანქანები</a></li>
+       <li><a href="contact.html">კონტაქტი</a></li>
+
+     <div class="burger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+     </ul>
+    </nav>
+  </header>
 
 
-<header class="site-header">
-<div class="header-inner">
-<div class="logo">
-<div class="clapper"🎞️></div>
-<div class="title"></div>
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="ძებნა...">
+  <button onclick="searchFunction()">ძებნა</button>
 </div>
-</div>
-</header>
 
 
-<main class="container">
-<section class="row">
-<h2 class="section-title">Recommended</h2>
-<div class="grid">
-<article class="card">
-<img src="https://m.media-amazon.com/images/M/MV5BYWQwMGRhNGEtZTNhMy00MzVjLWJhMjItYjcwMDljMTkyNTg2XkEyXkFqcGc@._V1_.jpg" alt="The Walking Dead poster" class="poster">
-<div class="caption">The Walking Dead</div>
-</article>
 
+  <main class="main">
+    
+    
+    <ul id="resultsList">
 
-<article class="card">
-<img src="https://www.fsunews.com/gcdn/presto/2023/01/15/PFSU/2821e7df-1732-4157-9904-72938c88bba0-alice_in_borderland.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp" alt="Alice in Borderland poster" class="poster">
-<div class="caption">Alice in Borderland</div>
-</article>
+</ul>
 
+    <section class="hero">
+      <h1>იქირავე მანქანა ყველაზე მარტივად საქართველოში</h1>
+      <p>სანდოობა,კომფორტი და ხელმისაწვდომი ფასები</p>
+      <a href="cars.html" class="btn">ნახე მანქანები</a>
+    </section>
+  </main>
 
-<article class="card">
-<img src="https://m.media-amazon.com/images/I/91+qwO5qnwL._UF1000,1000_QL80_.jpg" alt="The 100 poster" class="poster">
-<div class="caption">The 100</div>
-</article>
-
-
-<article class="card">
-<img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p185267_b_v8_ac.jpg" alt="Dexter poster" class="poster">
-<div class="caption">Dexter</div>
-</article>
-</div>
-</section>
-
-
-<section class="row">
-<h2 class="section-title">New</h2>
-<div class="grid">
-<article class="card">
-<img src="https://m.media-amazon.com/images/M/MV5BZWM0OWVmNTEtNWVkOS00MzgyLTkyMzgtMmE2ZTZiNjY4MmFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Spider-Man poster" class="poster">
-<div class="caption">Spider-Man</div>
-</article>
-
-
-<article class="card">
-<img src="https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_.jpg" alt="Ant-Man poster" class="poster">
-<div class="caption">Ant-Man</div>
-</article>
-
-
-<article class="card">
-<img src="https://m.media-amazon.com/images/M/MV5BNjRhNGZjZjEtYTQzYS00OWUxLThjNGEtMTIwMTE2ZDFlZTZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Thor poster" class="poster">
-<div class="caption">Thor</div>
-</article>
-
-
-<article class="card">
-<img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg" alt="Iron Man poster" class="poster">
-<div class="caption">Iron Man</div>
-</article>
-</div>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<!-- Empty footer to match simple layout in screenshot -->
-</footer>
+  <footer>
+    <p>© 2025 CarRent.ge | ყველა უფლება დაცულია</p>
+  </footer>
 </body>
 </html>
