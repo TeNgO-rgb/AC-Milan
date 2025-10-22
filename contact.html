@@ -1,21 +1,78 @@
-<main>
-      <link rel="stylesheet" href="style.css">
-  <h2>დაგვიკავშირდით</h2>
-  <form>
-    <label for="name">სახელი:</label>
-    <input type="text" id="name" name="name" required>
+<!doctype html>
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizBud — Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<div class="logo">BizBud</div>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="services.html" class="active">Services</a>
+<a href="about.html">About</a>
+<a href="testimonials.html">Testimonials</a>
+<a href="clients.html">Clients</a>
+<a href="contact.html">Contact</a>
+</nav>
+<a class="callnow" href="#">Call Now</a>
+</div>
+</header>
 
-    <label for="surname">გვარი:</label>
-    <input type="text" id="surname" name="surname" required>
 
-    <label for="email">ელ.ფოსტა:</label>
-    <input type="email" id="email" name="email" required>
+<main class="contact-page">
+<div class="container contact-inner">
+<section class="contact-left">
+<div class="kicker">CONTACT</div>
+<h2>Let’s Work Together</h2>
+<p class="address">500 Terry Francine St. San Francisco, CA 94158<br>info@mysite.com<br>Tel: 123-456-7890</p>
+<div class="socials">in &nbsp; f &nbsp; t</div>
+</section>
 
-    <label for="phone">ტელეფონის ნომერი:</label>
-    <input type="tel" id="phone" name="phone" required>
+
+<section class="contact-right">
+<form id="contactForm" class="contact-form" action="#" method="POST">
+<div class="row two-cols">
+<div class="field">
+<label>First Name *</label>
+<input type="text" name="first" required>
+</div>
+<div class="field">
+<label>Last Name *</label>
+<input type="text" name="last" required>
+</div>
+</div>
 
 
+<div class="field">
+<label>Email *</label>
+<input type="email" name="email" required>
+</div>
 
-    <button type="submit">გაგზავნა</button>
-  </form>
+
+<div class="field">
+<label>Message</label>
+<textarea name="message" rows="6"></textarea>
+</div>
+
+
+<div class="field">
+<button class="btn submit">Submit</button>
+</div>
+</form>
+</section>
+</div>
 </main>
+
+
+<footer class="site-footer">
+<div class="container">© 2025 BizBud</div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

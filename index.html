@@ -1,52 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ka">
 <head>
-  <meta charset="UTF-8">
-  <title>CarRent.ge</title>
-  <link rel="stylesheet" href="style.css">
- <script src="js/script.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BizBud — Home</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">CarRent.ge</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">მთავარი</a></li>
-        <li><a href="cars.html">მანქანები</a></li>
-       <li><a href="contact.html">კონტაქტი</a></li>
-
-     <div class="burger" onclick="toggleMenu()">
-    ☰
-  </div>
-
-     </ul>
-    </nav>
-  </header>
-
-
-<div class="search-container">
-  <input type="text" id="searchInput" placeholder="ძებნა...">
-  <button onclick="searchFunction()">ძებნა</button>
+<header class="site-header">
+<div class="container header-inner">
+<div class="logo">BizBud</div>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="testimonials.html">Testimonials</a>
+<a href="clients.html">Clients</a>
+<a href="contact.html" class="active">Contact</a>
+</nav>
+<a class="callnow" href="#">Call Now</a>
 </div>
+</header>
 
 
 
-  <main class="main">
-    
-    
-    <ul id="resultsList">
+<main class="hero">
+<div class="container hero-inner">
+<h1>The Power of Good Advice</h1>
+<p>I'm a paragraph. Click here to add your own text and edit me.</p>
+<a class="btn" href="services.html">Learn More</a>
+</div>
+</main>
 
-</ul>
 
-    <section class="hero">
-      <h1>იქირავე მანქანა ყველაზე მარტივად საქართველოში</h1>
-      <p>სანდოობა,კომფორტი და ხელმისაწვდომი ფასები</p>
-      <a href="cars.html" class="btn">ნახე მანქანები</a>
-    </section>
-  </main>
+<footer class="site-footer">
+<div class="container">© 2025 BizBud</div>
+</footer>
 
-  <footer>
-    <p>© 2025 CarRent.ge | ყველა უფლება დაცულია</p>
-  </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
